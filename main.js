@@ -26,7 +26,7 @@ function createWindow () {
   //判断是否是开发模式
   if(pkg.DEV) {
     //开发模式下 进行热调试
-      mainWindow.loadURL("http://localhost:8084/")
+      mainWindow.loadURL("http://localhost:8080/")
   } else {
       //发布模式下
       mainWindow.loadURL(url.format({

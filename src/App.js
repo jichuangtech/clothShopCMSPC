@@ -14,8 +14,7 @@ class App extends Component {
                 <p className="App-intro">
                     To get started, edit <code>src/App.js</code> and save to reload
                 </p>
-                <Button type="primary"  onClick={ ()=> {message.info("我被迪纳吉了")}}>我是按钮</Button>
-                <DatePicker />
+                <Button type="primary"  onClick={ ()=> {message.info("我是大黄蜂")}}>我是按钮</Button>
             </div>
         );
     }

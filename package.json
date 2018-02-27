@@ -4,14 +4,14 @@
   "version": "0.1.0",
   "main": "main.js",
   "homepage": ".",
-  "DEV": true,
+  "DEV": false,
   "private": true,
   "scripts": {
     "start": "webpack-dev-server --devtool eval --progress --colors --hot --history-api-fallback",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "electron-start": "electron ."
+    "electron-start": "webpack && electron ."
   },
   "dependencies": {
     "ant": "^0.2.0",
@@ -34,6 +34,7 @@
   },
   "devDependencies": {
     "babel-plugin-import": "^1.6.5",
+    "electron-packager": "^11.0.1",
     "react-router-dom": "^4.1.2",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.1"
