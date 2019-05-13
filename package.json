@@ -12,7 +12,10 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "electron-start": "webpack && electron .",
-    "linux-packager": "electron-packager . --platform=linux --electron-version=1.6.6  --overwrite"
+    "linux-packager": "electron-packager . --platform=linux",
+    "window-packager": "electron-packager . --platform=win32",
+    "macos-packager": "electron-packager . --platform=darwin",
+    "all-packager": "electron-packager . --all"
   },
   "dependencies": {
     "ant": "^0.2.0",
